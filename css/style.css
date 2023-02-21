@@ -239,10 +239,11 @@ body {
 }
 
 .formulaire {
-  padding: 100px 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 40px;
+  width: 24%;
 }
 
 .formulaire label {
@@ -253,7 +254,6 @@ body {
 .formulaire textarea {
   background: none;
   border: none;
-  width: 110%;
 }
 
 .formulaire .brdbottom {
