@@ -263,6 +263,7 @@ body {
 .formulaire input,
 .formulaire textarea:focus {
   outline: none;
+  color: #999;
 }
 /*FIN CONTACT*/
 
