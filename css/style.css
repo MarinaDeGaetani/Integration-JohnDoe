@@ -1,0 +1,346 @@
+body {
+  font-family: "Jost", sans-serif;
+}
+
+/* GLOBAL */
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.secpad {
+  padding: 100px 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* FIN GLOBAL */
+
+/* HEADER */
+
+.mainhead {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  padding: 15px;
+  display: block;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* FIN HEADER */
+
+/* BANNER */
+
+.banner {
+  height: 100vh;
+  background-image: url(../ressources/head_bg.jpg);
+  background-position: right center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.banner h1 {
+  color: #999;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.banner h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  color: #999;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.btn {
+  border-radius: 80px;
+  border: 1px solid #fff;
+  padding: 15px 32px;
+  display: inline-block;
+}
+
+.btn-first {
+  background: #fff;
+  color: #000;
+}
+
+.btn-second {
+  background: #000;
+  color: #fff;
+}
+
+.btn-second:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* FIN BANNER */
+
+/* Section 2 ABOUT ME */
+
+.dflex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentation {
+  width: 40%;
+}
+
+.presentation h2 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.presentation p {
+  color: #999;
+  margin: 15px 0px;
+}
+
+/* Dots */
+.myimg {
+  position: relative;
+  padding: 0 30px 30px 15px;
+}
+
+.myimg::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  bottom: 60%;
+  background-image: url(../ressources/dots.png);
+  z-index: -1;
+}
+
+.myimg::after {
+  content: "";
+  background: #2b2b2b;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  left: 45px;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Fin Section 2 ABOUT ME */
+
+/* Section 3 Services */
+
+.bgsec {
+  background: #000;
+}
+
+.center .white {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.center .pwhite,
+.services .pwhite {
+  color: #fff;
+}
+
+.services {
+  width: 28%;
+  margin-top: 10%;
+}
+
+.services img {
+  width: 10%;
+}
+
+.services h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+/* Fin Section 3 Services */
+
+/* Section 4 Book*/
+
+.center h2 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.center .black {
+  margin-bottom: 40px;
+}
+
+.travail {
+  width: 28%;
+  margin-top: 5%;
+}
+
+.travail img {
+  filter: saturate(0);
+  transition: transform 0.1s;
+}
+
+.travail p {
+  margin-top: 10px;
+}
+
+.travail img:hover {
+  filter: saturate(1);
+  transform: scale(1.05);
+}
+
+/* CONTACT*/
+
+.bgsec2 {
+  background: #2b2b2b;
+}
+
+.formulaire {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.formulaire label {
+  color: #999;
+}
+
+.formulaire input,
+.formulaire textarea {
+  background: none;
+  border: none;
+  width: 110%;
+}
+
+.formulaire .brdbottom {
+  border-bottom: solid 1px #999;
+}
+
+.formulaire input,
+.formulaire textarea:focus {
+  outline: none;
+}
+/*FIN CONTACT*/
+
+/*FOOTER*/
+
+footer {
+  background: #000;
+}
+
+footer .fflex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.fflex img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.fflex .linkf {
+  margin-right: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+/*FIN FOOTER*/
+
+/* RESPONSIVE*/
+
+@media screen and (max-width: 600px) {
+  /* Header*/
+
+  .menu {
+    justify-content: center;
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+  /* Présentation*/
+
+  .presentation {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .img-presentation {
+    width: 100%;
+    order: -1;
+    margin-bottom: 35px;
+  }
+
+  /* Service*/
+
+  .services {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Book*/
+
+  .travail {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Contact*/
+
+  .formulaire {
+    width: 50%;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}
+
+/* FIN RESPONSIVE*/
