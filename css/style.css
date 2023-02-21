@@ -299,6 +299,12 @@ footer .fflex {
 /* RESPONSIVE*/
 
 @media screen and (max-width: 600px) {
+  /* Global*/
+
+  .center {
+    padding: 0 20px;
+  }
+
   /* Header*/
 
   .menu {
